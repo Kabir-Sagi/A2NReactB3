@@ -9,15 +9,20 @@ import Info from './Components/Information/Info'
 import Parent from './Components/Props/Parent/Parent'
 import ParentD from './Components/Props/ParentData/ParentD'
 import ParentC from './Components/Child-Parent/ParentC'
+import PComp from './Components/Child-parent-2/Parent'
+import AContext from './Components/Context/A'
+import Login from './Components/Events/login'
+import Nav from './Components/Routing/Nav'
+import {BrowserRouter,Switch,Route} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <nav className="navbar navbar-dark bg-dark navbar-expand-sm">
+      {/* <nav className="navbar navbar-dark bg-dark navbar-expand-sm">
                <div className="container">
                  <a href="#" className="navbar-brand">Component Interaction</a>
                </div>
-      </nav>
+      </nav> */}
       {/* <Second />
       <h2>Welcome to React world</h2>
       <First />
@@ -27,7 +32,19 @@ function App() {
          {/* <Info /> */}
          {/* <Parent /> */}
          {/* <ParentD /> */}
-         <ParentC />
+         {/* <ParentC /> */}
+         {/* <PComp /> */}
+         {/* <AContext /> */}
+         {/* <Login /> */}
+         <BrowserRouter>
+         <Nav />
+         <Switch>
+           <Route exact path="/" component={First} />
+           <Route path="/context" component={AContext} />
+           <Route path="/login" component={Login} />
+           <Route path="/task" component={ParentC} />
+         </Switch>
+         </BrowserRouter>
     </div>
   );
 }
