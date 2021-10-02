@@ -15,6 +15,8 @@ class Nav extends React.Component {
                             <li className="nav-item"><Link className="nav-link text-white" to="/context">Context</Link></li>
                             <li className="nav-item"><Link className="nav-link text-white" to="/login">Login</Link></li>
                             <li className="nav-item"><Link className="nav-link text-white" to="/task">Task</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-white" to="/grid">Bootstrap</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-white" to="/ajax">Ajax</Link></li>
                         </ul>
                        </nav>
 

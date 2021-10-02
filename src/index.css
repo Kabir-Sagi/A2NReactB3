@@ -26,3 +26,7 @@ code {
 .btn-dark {
   background: linear-gradient(45deg,rgb(14, 10, 10),rgb(214, 26, 26));
 }
+.bg-danger {
+  /* background: yellowgreen */
+  background: linear-gradient(45deg,rgb(55, 0, 255),green);
+}

@@ -14,6 +14,8 @@ import AContext from './Components/Context/A'
 import Login from './Components/Events/login'
 import Nav from './Components/Routing/Nav'
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
+import Grid from './Components/Bootstrap/Grid'
+import Ajax from './Components/Ajax/Ajax'
 
 function App() {
   return (
@@ -43,6 +45,8 @@ function App() {
            <Route path="/context" component={AContext} />
            <Route path="/login" component={Login} />
            <Route path="/task" component={ParentC} />
+           <Route path="/grid" component={Grid} />
+           <Route path="/ajax" component={Ajax} />
          </Switch>
          </BrowserRouter>
     </div>
