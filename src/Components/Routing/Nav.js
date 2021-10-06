@@ -17,6 +17,9 @@ class Nav extends React.Component {
                             <li className="nav-item"><Link className="nav-link text-white" to="/task">Task</Link></li>
                             <li className="nav-item"><Link className="nav-link text-white" to="/grid">Bootstrap</Link></li>
                             <li className="nav-item"><Link className="nav-link text-white" to="/ajax">Ajax</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-white" to="/lc">LifeCycle</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-white" to="/redux">Redux Name</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-white" to="/city">Redux City</Link></li>
                         </ul>
                        </nav>
 

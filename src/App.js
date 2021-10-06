@@ -5,7 +5,7 @@ import First from './Components/First/First'
 import Second  from './Components/Second/Second';
 import Functional from './Components/Functional/Functional'
 import State from './Components/State/State'
-import Info from './Components/Information/Info'
+// import Info from './Components/Information/Info'
 import Parent from './Components/Props/Parent/Parent'
 import ParentD from './Components/Props/ParentData/ParentD'
 import ParentC from './Components/Child-Parent/ParentC'
@@ -16,6 +16,9 @@ import Nav from './Components/Routing/Nav'
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import Grid from './Components/Bootstrap/Grid'
 import Ajax from './Components/Ajax/Ajax'
+import Lifecycle from './Components/Lifecycle/Lifecycle';
+import Info from './Components/Redux/Info'
+import City from './Components/Redux/City'
 
 function App() {
   return (
@@ -47,6 +50,9 @@ function App() {
            <Route path="/task" component={ParentC} />
            <Route path="/grid" component={Grid} />
            <Route path="/ajax" component={Ajax} />
+           <Route path="/lc" component={Lifecycle} />
+           <Route path="/redux" component={Info} />
+           <Route path="/city" component={City} />
          </Switch>
          </BrowserRouter>
     </div>

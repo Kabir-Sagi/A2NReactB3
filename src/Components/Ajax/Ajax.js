@@ -10,7 +10,7 @@ import axios from 'axios'
         }
     }
     
-      sendRequest= ()=>{
+      sendAxiosRequest= ()=>{
           axios.get("https://jsonplaceholder.typicode.com/users")
           .then((res)=>{
               console.log(res.data)
@@ -22,14 +22,25 @@ import axios from 'axios'
           })
       }
 
+      sendFetchRequest = ()=>{
+          fetch("https://jsonplaceholder.typicode.com/users").then((res)=>{
+               return    res.json()
+          }).then((actualData)=>{
+               console.log(actualData)
+               this.setState({
+                userData:actualData
+            })
+          })
+      }
+
     render() {
         return (
             <div className="container">
                   <div className="container mt-5">
                       <div className="row">
                           <div className="col-sm-12">
-                              <button className="bt btn-primary p-2" onClick={this.sendRequest}>Send Axios request to Server</button>
-                              <button className="bt btn-primary p-2" onClick={this.sendfetchRequest}>Send Fetch request to Server</button>
+                              <button className="bt btn-primary p-2 mx-2" onClick={this.sendAxiosRequest}>Send Axios request to Server</button>
+                              <button className="bt btn-primary p-2 mx-2" onClick={this.sendFetchRequest}>Send Fetch request to Server</button>
                           </div>
                       </div>
                   </div>
